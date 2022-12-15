@@ -1,0 +1,2 @@
+-- Utilizando uma query, obtenha todos os depoimentos (testimonials) cadastrados, incluindo o nome do remetente e do destinatário.
+SELECT a.id, b1.name AS writer, b2.name AS recipient, a.message FROM testimonials AS a JOIN users b1 ON a."writerId" = b1.id JOIN users b2 ON a."recipientId" = b2.id;
