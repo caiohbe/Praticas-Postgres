@@ -63,4 +63,4 @@ CREATE TABLE creditCards (
     "expirationYear" INTEGER NOT NULL,
     password TEXT NOT NULL,
     limit REAL NOT NULL
-)
+);
