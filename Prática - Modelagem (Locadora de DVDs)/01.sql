@@ -42,6 +42,6 @@ CREATE TABLE rentals (
     "dvdId" INTEGER NOT NULL REFERENCES dvds(id),
     "customerId" INTEGER NOT NULL REFERENCES customers(id),
     "returnDate" TIMESTAMP,
-    "movieScore" INTEGER NOT NULL,
-    "assistanceScore" INTEGER NOT NULL
+    "movieScore" INTEGER,
+    "assistanceScore" INTEGER
 );
